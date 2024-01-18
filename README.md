@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# React Writing Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The React Writing Tool is a web-based writing application developed using React, showcasing frontend development, UI/UX design, and React best practices. The tool allows users to create and manage content in the form of text blocks and picture blocks.
 
-In the project directory, you can run:
+## Functional Requirements
 
-### `npm start`
+### Interface Design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The color schema is limited to black and white.
+- Ant Design components are used to enhance development.
+- Text is displayed in Times Roman font, size 12.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Block Functionality
 
-### `npm test`
+- Users can add content to the page using blocks.
+- Each block can be a text block or a picture block.
+- Text blocks allow users to enter and edit text with a maximum of 250 words.
+- Picture blocks allow users to upload and display an image from their local computer.
+- Initially, the page has no existing blocks, only an "Add Block" button at the center.
+- Users can add blocks by clicking on the "Add Block" button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Dynamic Block Management
 
-### `npm run build`
+- Users can add multiple blocks.
+- Functionality to create a new block either above or below an existing block.
+- No limit on the number of blocks a user can add.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Editing Tools (optional)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Basic text editing tools, such as bold, italic, and underline (for future improvement).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Responsive Design (optional)
 
-### `npm run eject`
+- The tool is designed to be responsive and work well on different screen sizes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository.
+2. Install dependencies: `npm install`.
+3. Start the development server: `npm start`.
+4. Open the application in your web browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Components
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `App.js`: The main component managing the state and rendering text and picture blocks.
+- `TextBlock.js`: Component for text blocks, including text input and post button.
+- `PictureBlock.js`: Component for picture blocks, including image upload and remove button.
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Text Blocks:**
+  - Users can enter and edit text.
+  - Post button to submit the text.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Picture Blocks:**
+  - Users can upload and display images.
+  - Remove button to clear the image.
 
-### Code Splitting
+## Limitations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- The application currently has basic functionality and may lack advanced features.
+- Further improvements can be made, such as text formatting options and additional editing tools.
 
-### Analyzing the Bundle Size
+## Development Environment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React version: [your-react-version]
+- Ant Design version: [ant-design-version]
+- Node.js version: [nodejs-version]
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the [MIT License](LICENSE).
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to contribute and provide feedback!
